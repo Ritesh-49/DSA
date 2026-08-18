@@ -82,10 +82,38 @@ public class composite {
             System.out.println();
         }
     }
+
+    public void StarDimond1() {
+        System.out.println("Enter n: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= 2 * n - 1; i++) {
+
+            int row;
+
+            if (i <= n) {
+                row = i;
+            } else {
+                row = 2 * n - i;
+            }
+
+            // Spaces
+            for (int j = 1; j <= n - row; j++) {
+                System.out.print("  ");
+            }
+
+            // Stars
+            for (int j = 1; j <= 2 * row - 1; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
     public static void main(String [] args){
         System.out.println("Ritesh");
 
         composite c = new composite();
-        c.StarDimond();
+        c.StarDimond1();
     }
 }
