@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class linearSearch {
 
+    public void maxValue(){
+        int[] arr = {12,2,5,9,0,1,6,10,6,77,43,32,99,};
+
+
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
