@@ -32,6 +32,31 @@ public class linearSearch {
 
     }
 
+
+    public void secondLArgest(){
+        int[] arr = {12,2,-5,9,0,1,6,10,6,77,-43,32,99,};
+
+        int max = Integer.MIN_VALUE;
+
+
+        for (int i = 1; i < arr.length; i++) {
+            max = Math.max(max, arr[i]);
+        }
+        System.out.println(max);
+
+        int smax = Integer.MIN_VALUE;
+
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] != max){
+                smax = Math.max(smax, arr[i]);;
+            }
+        }
+        System.out.println(max);
+
+
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
