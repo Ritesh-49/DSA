@@ -1,6 +1,4 @@
-package Array;
-
-import java.util.Scanner;
+package Arrays;
 
 public class arrayToArgument {
     // when we send array as argument then array alway pass by reference , means change in

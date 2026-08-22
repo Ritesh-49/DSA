@@ -1,6 +1,5 @@
-package Array;
+package Arrays;
 
-import java.awt.image.LookupOp;
 import java.util.Scanner;
 
 public class basics {
