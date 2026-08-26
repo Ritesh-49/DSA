@@ -9,6 +9,8 @@ public class rotateArray {
             int temp = nums[i];
             nums[i] = nums[j];
             nums[j] = temp;
+            i++;
+            j--;
         }
     }
 
@@ -18,8 +20,6 @@ public class rotateArray {
         reverse(nums , 0, n-k-1);
         reverse(nums , n-k, n-1);
         reverse(nums , 0 , n-1);
-
-
 
     }
     public static void main(String[] args) {
