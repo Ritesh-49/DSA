@@ -22,10 +22,27 @@ public class rotateArray {
         reverse(nums , 0 , n-1);
 
     }
+
+
+    public void rotateArrayUsingExtraArray(int[] nums, int k){
+            int n = nums.length;
+            k = k % n;
+
+            int[] temp = new int[n];
+
+            for (int i = 0; i < n; i++) {
+                temp[(i + k) % n] = nums[i];
+            }
+
+            for (int i = 0; i < n; i++) {
+                nums[i] = temp[i];
+            }
+
+    }
     public static void main(String[] args) {
         int[] nums = {2,13,32,12,4,6,8};
         int k = 3 ; // k
         rotateArray r = new rotateArray();
-        r.rotate(nums , k);
+        r.rotateArrayUsingExtraArray(nums , k);
     }
 }
