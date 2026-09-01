@@ -4,10 +4,9 @@ public class sortZerosOnesAndTwos {
     void method1(int [] arr, int noOfZeros , int noOfOnes){
         int n = arr.length;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { // Two pass algorithm
             if (arr[i] == 0) noOfZeros++;
-            else if (arr[i] == 1 ) noOfOnes++;
-
+            if (arr[i] == 1 ) noOfOnes++;
         }
 
         for (int i = 0; i < n; i++) {
@@ -25,6 +24,11 @@ public class sortZerosOnesAndTwos {
             System.out.print(elem + " ");
         }
     }
+
+    void method2(){      // Duch flag Algorithm
+
+    }
+
     public static void main(String[] args) {
         int [] arr = {0,1,0,2,0,2,2,1,0,1};
         int noOfZeros = 0, noOfOnes = 0;
