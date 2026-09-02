@@ -40,7 +40,7 @@ public class sortOnesAndZeros {
             }
         }*/
 
-        while(i<j){
+        while(i<j){  // one pass
             if (arr[i] == 0) i++;
             if (arr[j] == 1) j--;
 //            if (i>j) break;
@@ -50,6 +50,7 @@ public class sortOnesAndZeros {
                 arr[j] = temp;
                 i++;
                 j--;
+
             }
         }
        /* while(i<j){
