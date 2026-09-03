@@ -27,6 +27,34 @@ public class sortZerosOnesAndTwos {
 
     void method2(){      // Duch flag Algorithm
 
+
+        int[] arr = {0,1,2,0,1,2,1,2,0,0};
+        int n = arr.length;
+        int mid = 0, lo = 0, high = n-1;
+
+        while (mid <= high) {
+
+            if (arr[mid] == 0){
+                int t = arr[lo];
+                arr[lo] = arr[mid];
+                arr[mid] = t;
+                mid++;
+                lo++;
+            }
+            else if (arr[mid] == 1) {
+                mid++;
+            }
+            else {  // arr[mid] == 2
+                int t = arr[mid];
+                arr[mid] = arr[high];
+                arr[high] = t;
+                high--;
+            }
+        }
+
+        for (int elem : arr){
+            System.out.print(elem + " ");
+        }
     }
 
     public static void main(String[] args) {
@@ -34,7 +62,8 @@ public class sortZerosOnesAndTwos {
         int noOfZeros = 0, noOfOnes = 0;
 
         sortZerosOnesAndTwos s = new sortZerosOnesAndTwos();
-        s.method1(arr,noOfZeros,noOfOnes);
+//        s.method1(arr,noOfZeros,noOfOnes);
+        s.method2();
 
     }
 }
