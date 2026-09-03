@@ -40,6 +40,7 @@ public class sortZerosOnesAndTwos {
                 arr[mid] = t;
                 mid++;
                 lo++;
+
             }
             else if (arr[mid] == 1) {
                 mid++;
