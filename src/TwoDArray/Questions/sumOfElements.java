@@ -7,13 +7,23 @@ public class sumOfElements {
         int n = arr[0].length; // length of column
         int sum = 0;
 
+        int multiple = 1;
+
+//        for (int i = 0; i < m; i++) {
+//            for (int j = 0; j < n; j++) {
+//                sum += arr[i][j];
+//            }
+//
+//        }
+
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                sum += arr[i][j];
+                multiple *= arr[i][j];
             }
 
         }
-        System.out.println(sum);
+//        System.out.println(sum);
+        System.out.println(multiple);
 
     }
 }
