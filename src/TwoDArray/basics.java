@@ -17,9 +17,18 @@ public class basics {
             }
         }
 
-        for (int i = 0; i < n ; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(arr[i][j] + " ");
+//        for (int i = 0; i < n ; i++) {
+//            for (int j = 0; j < n; j++) {
+//                System.out.print(arr[i][j] + " ");
+//            }
+//            System.out.println(
+//
+//            );
+//        }
+
+        for (int [] elem : arr){
+            for (int x : elem) {
+                System.out.print(x + " ") ;
             }
             System.out.println();
         }
