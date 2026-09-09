@@ -12,6 +12,7 @@ public class rotateThematrixby90Degree {
             System.out.println();
 
         }
+        System.out.println();
 
     }
 
@@ -21,7 +22,9 @@ public class rotateThematrixby90Degree {
         int m = arr.length, n = arr[0].length;
         print(arr);
 
-        System.out.println();
+
+        // Rotate --> transpoe -->  Reverse Each row
+
         // transpose
 
         for (int i = 0; i < m; i++) {
@@ -34,6 +37,26 @@ public class rotateThematrixby90Degree {
 
         }
         print(arr);
+
+
+        // Rotate --> Reverse Each row
+
+        for (int i = 0; i < m; i++) {
+            int a = 0, b = m - 1;
+
+            while(a<b){
+
+                // swap arr[i][a] and arr[i][b]
+                int temp = arr[i][a];
+                arr[i][a] = arr[i][b];
+                arr[i][b] = temp;
+                a++;
+                b--;
+            }
+
+        }
+        print(arr);
+
 
 
     }
