@@ -46,7 +46,7 @@ public class setMatrixZeroMplusNspace {
         boolean zeroCol = false;
 
         // check the 0th row
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < n; i++) {
             if (arr[0][i] == 0){
                 zeroRow = true;
                 break;
@@ -54,7 +54,7 @@ public class setMatrixZeroMplusNspace {
         }
 
         // check the 0th col
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < m; j++) {
             if (arr[j][0] == 0){
                 zeroCol = true;
                 break;
@@ -102,7 +102,7 @@ public class setMatrixZeroMplusNspace {
             }
         }
 
-        if (zeroRow == true){ // set the 0th col to zero
+        if (zeroCol == true){ // set the 0th col to zero
             for (int i = 0; i < n; i++) {
                 arr[i][0] = 0;
             }
