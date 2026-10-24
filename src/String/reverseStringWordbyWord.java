@@ -12,7 +12,12 @@ public class reverseStringWordbyWord {
         int n = sb.length();
         int i= 0 , j =0;
 
+
+
         while(j<n){
+
+
+
             if (sb.charAt(j) != ' ') j++;
 
             else {
