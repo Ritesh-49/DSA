@@ -14,15 +14,17 @@ public class toggleString {
             int ascii = (int)ch;
             if (ascii >= 65 && ascii <= 95){ // Capital
                 ascii = ascii + 32;
-                ch = (char)ascii;
-                sb.setCharAt(i, ch);
+//                ch = (char)ascii;
+//                sb.setCharAt(i, ch);
             }
 
             else if (ascii >= 97 && ascii <= 122){ // small
                 ascii = ascii - 32;
-                ch = (char)ascii;
-                sb.setCharAt(i, ch);
+//                ch = (char)ascii;
+//                sb.setCharAt(i, ch);
             }
+            ch = (char)ascii;
+            sb.setCharAt(i, ch);
         }
         System.out.println(sb);
     }
