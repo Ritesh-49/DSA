@@ -3,7 +3,7 @@ package Array.Questions;
 public class mergeTwoSortedArray {
     public static void main(String[] args) {
         int [] a = {10,15,20,25};
-        int [] b = {5,8,20,30,40};
+        int [] b = {5,8,20,30,40,50};
         int [] c = new int[a.length + b.length];
         int i = 0, j = 0, k = 0;
 
@@ -38,5 +38,7 @@ public class mergeTwoSortedArray {
         for (int elem : c){
             System.out.print(elem + " ");
         }
+
+
     }
 }
