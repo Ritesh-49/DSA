@@ -16,6 +16,8 @@ public class pascalsTriangle {
             ans.add(l);
         }
 
+
+
         for (int i = 2; i < n ; i++) {
             for (int j = 1; j <= i-1; j++) {
                 ans.get(i).set(j, ans.get(i-1).get(j) + ans.get(i-1).get(j-1));
